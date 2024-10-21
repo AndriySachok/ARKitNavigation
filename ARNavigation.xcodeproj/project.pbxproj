@@ -10,9 +10,22 @@
 		B79FC0BF2CC4291D007B693D /* ARNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B73433B02CC6AB76002BA101 /* Exceptions for "ARNavigation" folder in "ARNavigation" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B79FC0BE2CC4291D007B693D /* ARNavigation */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		B79FC0C12CC4291D007B693D /* ARNavigation */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B73433B02CC6AB76002BA101 /* Exceptions for "ARNavigation" folder in "ARNavigation" target */,
+			);
 			path = ARNavigation;
 			sourceTree = "<group>";
 		};

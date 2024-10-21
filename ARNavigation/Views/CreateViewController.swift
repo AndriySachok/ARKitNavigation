@@ -29,12 +29,15 @@ class CreateViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.dismissKeyboard()
-        setupARView()
-        setupButtonStackView()
         cancellableForShareSheet = interactor.updatePublisher
             .sink { [weak self] in
                 self?.presentShareSheet()
             }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        setupARView()
+        setupButtonStackView()
     }
     
     override func viewWillDisappear(_ animated: Bool) {

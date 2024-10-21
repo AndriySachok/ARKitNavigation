@@ -32,6 +32,9 @@ class LoadViewController: UIViewController, UIDocumentPickerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.dismissKeyboard()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         openDocumentPicker()
     }
     
@@ -101,7 +104,6 @@ class LoadViewController: UIViewController, UIDocumentPickerDelegate {
         present(documentPicker, animated: true, completion: nil)
     }
     
-    // Called when a document is picked
     func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
         guard let url = urls.first else { return }
         print("Selected file URL: \(url)")
